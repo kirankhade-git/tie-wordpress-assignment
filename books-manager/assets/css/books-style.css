@@ -1,0 +1,81 @@
+.tie-books-wrapper {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.tie-books-wrapper h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.tie-books-filters {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.tie-books-filters input,
+.tie-books-filters select,
+.tie-books-filters button {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.tie-books-filters button {
+    background: #111;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tie-books-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.tie-book-card {
+    background: #fff;
+    padding: 22px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.tie-book-card h3 a {
+    color: #111;
+    text-decoration: none;
+}
+
+.tie-pagination {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.tie-pagination a,
+.tie-pagination span {
+    padding: 8px 12px;
+    margin: 3px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+}
+
+.tie-login-message {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 25px;
+    background: #fff3cd;
+    border-left: 5px solid #ff9800;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .tie-books-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tie-books-filters {
+        flex-direction: column;
+    }
+}
