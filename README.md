@@ -1,88 +1,70 @@
-TIE Books Manager
-Overview
+# TIE Books Manager
+
+## Overview
+
 TIE Books Manager is a custom WordPress plugin developed for the WordPress Developer Assignment.
 
 It allows administrators to manage books using a custom post type and restricts access to logged-in users only.
 
-Features
-Custom Post Type: Books
-Author Field
-Genre Dropdown
-Published Date Field
-Description Field
-Single Book Template
-Books Listing Shortcode
-Login Restriction
-Pagination (5 books per page)
-AJAX Filter by Author
-AJAX Filter by Genre
-Responsive Design
-Input Sanitization and Validation
-Installation
-Upload the plugin folder to:
-wp-content/plugins/
+## Features
 
-Login to WordPress Dashboard
+- Custom Post Type: Books
+- Author Field
+- Genre Dropdown
+- Published Date Field
+- Description Field
+- Single Book Template
+- Books Listing Shortcode
+- Login Restriction
+- Pagination (5 books per page)
+- AJAX Filter by Author
+- AJAX Filter by Genre
+- Responsive Design
+- Input Sanitization and Validation
 
-Go to:
+## Installation
 
-Plugins → Installed Plugins
+1. Upload the plugin folder to `wp-content/plugins/`
+2. Activate the plugin
+3. Go to **Settings → Permalinks**
+4. Click **Save Changes**
 
-Activate:
-TIE Books Manager
+## Usage
 
-Go to:
-Settings → Permalinks
+### Add Books
 
-Click:
-Save Changes
-
-Usage
-Add Books
 Dashboard → Books → Add New
 
-Fill:
+### Display Books
 
-Title
-Author
-Genre
-Published Date
-Description
-Publish the book.
+Use shortcode:
 
-Display Books
-Create a page.
+`[books_list]`
 
-Add shortcode:
+## Access Restriction
 
-[books_list]
-
-Publish the page.
-
-Access Restriction
 Only logged-in users can view:
 
-Books Listing Page
-Single Book Pages
-Logged-out users see a login message.
+- Books Listing Page
+- Single Book Pages
 
-AJAX Filtering
-Users can filter books by:
+## AJAX Filtering
 
-Author
-Genre
-Results are displayed without page reload using AJAX.
+- Filter by Author
+- Filter by Genre
+- Results update without page refresh
 
-Security
-This plugin uses:
+## Security
 
-wp_nonce_field()
-wp_verify_nonce()
-sanitize_text_field()
-sanitize_textarea_field()
-esc_html()
-esc_attr()
-esc_url()
-current_user_can()
-Author
+- wp_nonce_field()
+- wp_verify_nonce()
+- sanitize_text_field()
+- sanitize_textarea_field()
+- esc_html()
+- esc_attr()
+- esc_url()
+- current_user_can()
+
+## Author
+
 Kiran Khade
